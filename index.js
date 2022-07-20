@@ -1,5 +1,5 @@
 // TODO: Include packages needed for this application
-const { fs } = require('fs');
+const fs = require('fs');
 const inquirer = require('inquirer');
 const path = require('path')
 const generateMarkdown = require('./generateMarkdown')
@@ -9,24 +9,44 @@ const questions = [
     {
         type: "input",
         name: "title",
-        message: "What's the title for the project"
-    },
-    {
-        type: "input",
-        name: "table",
-        message: "What's the description for the project"
+        message: "What's the title for the project?"
     },
     {
         type: "input",
         name: "description",
+        message: "What's the description for the project?"
+    },
+    {
+        type: "input",
+        name: "installation",
         message: "What are the installation steps for the project"
     },
     {
         type: "list",
         name: "license",
         message: "What's the license for the project",
-        choices: ["Apache 2.0", "Mozilla", "MIT"]
+        choices: ["Apache_2.0", "Mozilla", "MIT", "None"]
     },
+    {
+        type: "input",
+        name: "email",
+        message: "What is your email?",
+    },
+    {
+        type: "input",
+        name: "usage",
+        message: "What will this be used for?",
+    },
+    {
+        type: "input",
+        name: "contribute",
+        message: "How to contribute to this application?",
+    },
+    {
+        type: "input",
+        name: "testing",
+        message: "How is this application tested?",
+    }
 ];
 
 inquirer
@@ -36,6 +56,7 @@ inquirer
         console.log(answers)
         console.log(__dirname)
         writeToFile("test.md", generateMarkdown({...answers}))
+        console.log("Done with the write to file");
     })
     .catch((error) => {
         if (error.isTtyError) {
@@ -46,15 +67,12 @@ inquirer
     });
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-    fs.writeFile(path.join(process.cwd(),fileName), data, (err) => {
-        if (err) throw err;
-        console.log('The file has been saved!');
-    })
-
+    fs.writeFileSync(path.join(process.cwd(),fileName), data);
+console.log("At the end of write file");
 }
 
 // TODO: Create a function to initialize app
-function init() { }
+/*function init() { }
 
 // Function call to initialize app
-init();
+init();*/
