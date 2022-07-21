@@ -1,44 +1,30 @@
-# 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+# Professional README Generator
 
 ## Description
 
-
+This application aims to produce a professional looking README file based off user input and the appropriate questions needed.
 
 ## Table of Contents
 
 * [Installation](#installation)
 
-* [License](#license)
 * [Usage](#usage)
-
-* [Contribute](#contribute)
-
-* [Testing](#testing)
 
 ## Installation
 
+Download the files through my github in the correct repo and ensure Inquirer is also installed.
 
 
-## License
-    
-This app is licensed under Apache_2.0 license.
 
 ## Usage
 
-
-
-## Contribute
+Open the terminal, type "node index.js" to start the application, answer the questions when prompted and submit, then a README.md will be created for your use.
 
 
 
 ## Questions
 
-Here is my Github: [](https://github.com/)
+Here is my Github: [RubyRed01](https://github.com/RubyRed01)
 
-If you have any further questions about how to contribute, you may contact me at my email: 
-
-## Testing
-
-
+If you have any further questions about how to contribute, you may contact me at my email: evelyn.h2001@hotmail.com
 
