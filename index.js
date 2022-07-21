@@ -58,10 +58,8 @@ inquirer
     .prompt(questions)
     .then((answers) => {
         // Use user feedback for... whatever!!
-        console.log(answers)
-        console.log(__dirname)
+        console.log("Here are your chosen answers.", answers)
         writeToFile("test.md", generateMarkdown({...answers}))
-        console.log("Done with the write to file");
     })
     .catch((error) => {
         if (error.isTtyError) {
@@ -73,11 +71,10 @@ inquirer
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
     fs.writeFileSync(path.join(process.cwd(),fileName), data);
-console.log("At the end of write file");
 }
 
 // TODO: Create a function to initialize app
-/*function init() { }
+/*function init();
 
 // Function call to initialize app
 init();*/
