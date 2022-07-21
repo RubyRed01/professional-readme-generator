@@ -18,7 +18,7 @@ Download the files through my github in the correct repo and ensure Inquirer is 
 
 ## Usage
 
-Open the terminal, type "node index.js" to start the application, answer the questions when prompted an submit, then a README.md will be created for your use.
+Open the terminal, type "node index.js" to start the application, answer the questions when prompted and submit, then a README.md will be created for your use.
 
 
 
