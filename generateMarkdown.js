@@ -60,6 +60,10 @@ ${data.usage}
 
 ${data.contribute}
 
+## Questions
+
+Here is my Github: ${data.github}
+
 If you have any further questions about how to contribute, you may contact me at my email: ${data.email}
 
 ## Testing
