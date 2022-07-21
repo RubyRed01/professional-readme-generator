@@ -1,15 +1,14 @@
-# 
-![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+# Hello World
+undefined
 
 ## Description
 
-
+Saying hello world to anyone
 
 ## Table of Contents
 
 * [Installation](#installation)
 
-* [License](#license)
 * [Usage](#usage)
 
 * [Contribute](#contribute)
@@ -18,27 +17,25 @@
 
 ## Installation
 
+Blah
 
 
-## License
-    
-This app is licensed under Apache_2.0 license.
 
 ## Usage
 
-
+blah
 
 ## Contribute
 
-
+blah
 
 ## Questions
 
-Here is my Github: [](https://github.com/)
+Here is my Github: [blah](https://github.com/blah)
 
-If you have any further questions about how to contribute, you may contact me at my email: 
+If you have any further questions about how to contribute, you may contact me at my email: hello.world@blah
 
 ## Testing
 
-
+blah
 
